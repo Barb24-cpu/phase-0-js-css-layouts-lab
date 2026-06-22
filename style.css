@@ -25,3 +25,26 @@
     border-radius: 8px;
 
 }
+
+/* 5. Make the Layout Responsive
+
+/* Use media queries to adjust the layout for smaller screens */
+@media (max-width: 768px) {
+    .cat-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cat-breed{
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* 6. Ad Hover Effect for Cat Breed Cards
+
+/* Apply a scaling transformation to cat breed cards when hovered over */
+.cat-breed:hover {
+    transform: scale(1.05);
+}
